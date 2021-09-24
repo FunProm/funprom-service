@@ -1,0 +1,386 @@
+{
+    "categories": [
+        {
+            "id": "1",
+            "description": "General"
+        },
+        {
+            "id": "2",
+            "description": "During the past week:"
+        },
+        {
+            "id": "3",
+            "description": "For the following questions please circle the number between 1 and 7 that best applies to you"
+        },
+        {
+            "id": "4",
+            "description": "During the past four weeks:"
+        },
+        {
+            "id": "5",
+            "description": "During the past 7 days:"
+        }
+    ],
+    "questions": [
+        {
+            "number": "1",
+            "category": "1",
+            "question": "Do you have any trouble doing strenuous activities, like carrying a heavy shopping bag or a suitcase?",
+            "type": "1"
+        },
+        {
+            "number": "2",
+            "category": "1",
+            "question": "Do you have any trouble taking a long walk?",
+            "type": "1"
+        },
+        {
+            "number": "3",
+            "category": "1",
+            "question": "Do you have any trouble taking a short walk outside of the house?",
+            "type": "1"
+        },
+        {
+            "number": "4",
+            "category": "1",
+            "question": "Do you need to stay in bed or a chair during the day?",
+            "type": "1"
+        },
+        {
+            "number": "5",
+            "category": "1",
+            "question": "Do you need help with eating, dressing, washing yourself or using the toilet?",
+            "type": "1"
+        },
+        {
+            "number": "6",
+            "category": "2",
+            "question": "Were you limited in doing either your work or other daily activities?",
+            "type": "1"
+        },
+        {
+            "number": "7",
+            "category": "2",
+            "question": "Were you limited in pursuing your hobbies or other leisure time activities?",
+            "type": "1"
+        },
+        {
+            "number": "8",
+            "category": "2",
+            "question": "Were you short of breath?",
+            "type": "1"
+        },
+        {
+            "number": "9",
+            "category": "2",
+            "question": "Have you had pain?",
+            "type": "1"
+        },
+        {
+            "number": "10",
+            "category": "2",
+            "question": "Did you need to rest?",
+            "type": "1"
+        },
+        {
+            "number": "11",
+            "category": "2",
+            "question": "Have you had trouble sleeping?",
+            "type": "1"
+        },
+        {
+            "number": "12",
+            "category": "2",
+            "question": "Have you felt weak?",
+            "type": "1"
+        },
+        {
+            "number": "13",
+            "category": "2",
+            "question": "Have you lacked appetite?",
+            "type": "1"
+        },
+        {
+            "number": "14",
+            "category": "2",
+            "question": "Have you felt nauseated?",
+            "type": "1"
+        },
+        {
+            "number": "15",
+            "category": "2",
+            "question": "Have you vomited?",
+            "type": "1"
+        },
+        {
+            "number": "16",
+            "category": "2",
+            "question": "Have you been constipated?",
+            "type": "1"
+        },
+        {
+            "number": "17",
+            "category": "2",
+            "question": "Have you had diarrhea?",
+            "type": "1"
+        },
+        {
+            "number": "18",
+            "category": "2",
+            "question": "Were you tired?",
+            "type": "1"
+        },
+        {
+            "number": "19",
+            "category": "2",
+            "question": "Did pain interfere with your daily activities?",
+            "type": "1"
+        },
+        {
+            "number": "20",
+            "category": "2",
+            "question": "Have you had difficulty in concentrating on things, like reading a newspaper or watching television?",
+            "type": "1"
+        },
+        {
+            "number": "21",
+            "category": "2",
+            "question": "Did you feel tense?",
+            "type": "1"
+        },
+        {
+            "number": "22",
+            "category": "2",
+            "question": "Did you worry?",
+            "type": "1"
+        },
+        {
+            "number": "23",
+            "category": "2",
+            "question": "Did you feel irritable?",
+            "type": "1"
+        },
+        {
+            "number": "24",
+            "category": "2",
+            "question": "Did you feel depressed?",
+            "type": "1"
+        },
+        {
+            "number": "25",
+            "category": "2",
+            "question": "Have you had difficulty remembering things?",
+            "type": "1"
+        },
+        {
+            "number": "26",
+            "category": "2",
+            "question": "Has your physical condition or medical treatment interfered with your family life?",
+            "type": "1"
+        },
+        {
+            "number": "27",
+            "category": "2",
+            "question": "Has your physical condition or medical treatment interfered with your social activities?",
+            "type": "1"
+        },
+        {
+            "number": "28",
+            "category": "2",
+            "question": "Has your physical condition or medical treatment caused you financial difficulties?",
+            "type": "1"
+        },
+        {
+            "number": "29",
+            "category": "3",
+            "question": "How would you rate your overall health during the past week?",
+            "type": "3"
+        },
+        {
+            "number": "30",
+            "category": "3",
+            "question": "How would you rate your overall quality of life during the past week?",
+            "type": "3"
+        },
+        {
+            "number": "31",
+            "category": "2",
+            "question": "Have you had a dry mouth?",
+            "type": "1"
+        },
+        {
+            "number": "32",
+            "category": "2",
+            "question": "Have food and drink tasted different than usual?",
+            "type": "1"
+        },
+        {
+            "number": "33",
+            "category": "2",
+            "question": "Have your eyes been painful, irritated or watery?",
+            "type": "1"
+        },
+        {
+            "number": "34",
+            "category": "2",
+            "question": "Have you lost any hair?",
+            "type": "1"
+        },
+        {
+            "number": "35",
+            "category": "2",
+            "question": "Answer this question only if you have lost any hair: Have you been upset by the loss of your hair?",
+            "type": "1"
+        },
+        {
+            "number": "36",
+            "category": "2",
+            "question": "Have you felt ill or unwell?",
+            "type": "1"
+        },
+        {
+            "number": "37",
+            "category": "2",
+            "question": "Have you had hot flushes?",
+            "type": "1"
+        },
+        {
+            "number": "38",
+            "category": "2",
+            "question": "Have you had headaches?",
+            "type": "1"
+        },
+        {
+            "number": "39",
+            "category": "2",
+            "question": "Have you felt physically less attractive as a result of your disease or treatment?",
+            "type": "1"
+        },
+        {
+            "number": "40",
+            "category": "2",
+            "question": "Have you felt less feminine as a result of your disease or treatment?",
+            "type": "1"
+        },
+        {
+            "number": "41",
+            "category": "2",
+            "question": "Have you had problems looking at yourself naked?",
+            "type": "1"
+        },
+        {
+            "number": "42",
+            "category": "2",
+            "question": "Have you been dissatisfied with your body?",
+            "type": "1"
+        },
+        {
+            "number": "43",
+            "category": "2",
+            "question": "Have you worried about your health in the future?",
+            "type": "1"
+        },
+        {
+            "number": "44",
+            "category": "4",
+            "question": "Have you been interested in sex?",
+            "type": "1"
+        },
+        {
+            "number": "45",
+            "category": "4",
+            "question": "Have you been sexually active (with or without intercourse)?",
+            "type": "1"
+        },
+        {
+            "number": "46",
+            "category": "4",
+            "question": "Has sex been enjoyable for you?",
+            "type": "1"
+        },
+        {
+            "number": "47",
+            "category": "2",
+            "question": "Have you had any pain in your arm or shoulder?",
+            "type": "1"
+        },
+        {
+            "number": "48",
+            "category": "2",
+            "question": "Have you had a swollen arm or hand?",
+            "type": "1"
+        },
+        {
+            "number": "49",
+            "category": "2",
+            "question": "Have you had problems raising your arm or moving it sideways?",
+            "type": "1"
+        },
+        {
+            "number": "50",
+            "category": "2",
+            "question": "Have you had any pain in the area of your affected breast?",
+            "type": "1"
+        },
+        {
+            "number": "51",
+            "category": "2",
+            "question": "Has the area of your affected breast been swollen?",
+            "type": "1"
+        },
+        {
+            "number": "52",
+            "category": "2",
+            "question": "Has the area of your affected breast been oversensitive?",
+            "type": "1"
+        },
+        {
+            "number": "53",
+            "category": "2",
+            "question": "Have you had skin problems on or in the area of your affected breast (e.g., itchy, dry, flaky)?",
+            "type": "1"
+        },
+        {
+            "number": "54",
+            "category": "2",
+            "question": "Have you had tingling hands or feet?",
+            "type": "1"
+        },
+        {
+            "number": "55",
+            "category": "5",
+            "question": "I have pain in my joints",
+            "type": "2"
+        },
+        {
+            "number": "56",
+            "category": "5",
+            "question": "I have vaginal discharge",
+            "type": "2"
+        },
+        {
+            "number": "57",
+            "category": "5",
+            "question": "I have vaginal itching/irritation",
+            "type": "2"
+        },
+        {
+            "number": "58",
+            "category": "5",
+            "question": "I have vaginal bleeding or spotting",
+            "type": "2"
+        },
+        {
+            "number": "59",
+            "category": "5",
+            "question": "I have vaginal dryness",
+            "type": "2"
+        },
+        {
+            "number": "60",
+            "category": "5",
+            "question": "I have pain or discomfort with intercourse",
+            "type": "2"
+        }
+    ]
+}

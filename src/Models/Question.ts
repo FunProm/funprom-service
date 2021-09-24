@@ -1,3 +1,6 @@
 export class Question {
-  public message: string;
+  number: string;
+  category: string;
+  question: string;
+  type: string;
 }
