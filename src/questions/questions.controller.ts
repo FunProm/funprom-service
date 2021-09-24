@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post, Query } from '@nestjs/common';
 import { QuestionsService } from './questions.service';
 import { QuestionDefinition } from '../Models/QuestionDefinition';
 import { Question } from '../Models/Question';
@@ -8,8 +8,8 @@ export class QuestionsController {
   constructor(private questionsService: QuestionsService) {}
 
   @Get()
-  getQuestionSet(): Array<Question> {
-    return this.questionsService.getQuestionSet();
+  getQuestionSet(@Query() queryParams): Array<Question> {
+    return this.questionsService.getQuestionSet(queryParams.limit);
   }
 
   @Post()
