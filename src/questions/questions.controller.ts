@@ -1,7 +1,7 @@
-import { Body, Controller, Get, Post, Query } from '@nestjs/common';
+import {Body, Controller, Get, Param, ParseIntPipe, Post, Query} from '@nestjs/common';
 import { QuestionsService } from './questions.service';
-import { QuestionDefinition } from '../Models/QuestionDefinition';
 import { Question } from '../Models/Question';
+import { Answer } from '../Models/Answer';
 
 @Controller('question')
 export class QuestionsController {
@@ -9,11 +9,14 @@ export class QuestionsController {
 
   @Get()
   getQuestionSet(@Query() queryParams): Array<Question> {
-    return this.questionsService.getQuestionSet(queryParams.limit);
+    return this.questionsService.getQuestionSet(
+      queryParams.limit,
+      queryParams.category,
+    );
   }
 
-  @Post()
-  create(@Body() body: QuestionDefinition) {
-    this.questionsService.setQuestionSet(body);
+  @Post(':userId')
+  answer(@Param('userId', ParseIntPipe) userId, @Body() body: Answer) {
+    this.questionsService.updateAnswer(userId, body);
   }
 }
