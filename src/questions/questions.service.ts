@@ -55,7 +55,12 @@ export class QuestionsService implements OnApplicationBootstrap {
   }
 
   getRandomCategory(): number {
-    return Math.ceil(Math.random() * 5);
+    let category = Math.ceil(Math.random() * 5);
+    // ugly fix, it was very late at night
+    if (category === 3) {
+      category = 2;
+    }
+    return category;
   }
 
   updateAnswer(userId: number, answer: Answer) {
