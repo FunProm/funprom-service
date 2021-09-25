@@ -34,13 +34,20 @@ export class QuestionsService implements OnApplicationBootstrap {
       .flat(1);
     const desiredCategory =
       category !== undefined ? parseInt(category) : this.getRandomCategory();
-    return QuestionDataJson.questions
+    const questionSet = QuestionDataJson.questions
       .filter((question) => parseInt(question.category, 10) === desiredCategory)
       .filter(
         (question) =>
           !alreadyAnsweredQuestionsNumbers.includes(question.number),
       )
       .slice(0, limit);
+    if (questionSet.length === 0) {
+      const question = new Question();
+      question.category = desiredCategory.toString();
+      return [question];
+    } else {
+      return questionSet;
+    }
   }
 
   deleteQuestionSet(userId: number): void {
