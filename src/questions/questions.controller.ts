@@ -1,4 +1,12 @@
-import {Body, Controller, Get, Param, ParseIntPipe, Post, Query} from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Param,
+  ParseIntPipe,
+  Post,
+  Query,
+} from '@nestjs/common';
 import { QuestionsService } from './questions.service';
 import { Question } from '../Models/Question';
 import { Answer } from '../Models/Answer';
