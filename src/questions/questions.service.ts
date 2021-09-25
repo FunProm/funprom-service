@@ -20,8 +20,12 @@ export class QuestionsService implements OnApplicationBootstrap {
     this.questionDefinition = questionDefinition;
   }
 
-  getQuestionSet(limit = 10, category = undefined): Array<Question> {
-    const existingAnswerCollections = this.answersCollection.find();
+  getQuestionSet(
+    userId: number,
+    limit = 10,
+    category = undefined,
+  ): Array<Question> {
+    const existingAnswerCollections = this.answersCollection.find({ userId });
 
     const alreadyAnsweredQuestionsNumbers = existingAnswerCollections
       .map((answerCollection) =>
@@ -37,6 +41,10 @@ export class QuestionsService implements OnApplicationBootstrap {
           !alreadyAnsweredQuestionsNumbers.includes(question.number),
       )
       .slice(0, limit);
+  }
+
+  deleteQuestionSet(userId: number): void {
+    this.answersCollection.chain().find({ userId }).remove();
   }
 
   getRandomCategory(): number {
