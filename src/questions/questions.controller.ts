@@ -21,11 +21,18 @@ export class QuestionsController {
     @Param('userId', ParseIntPipe) userId,
     @Query() queryParams,
   ): Array<Question> {
-    return this.questionsService.getQuestionSet(
+    const questionSet: Array<Question> = this.questionsService.getQuestionSet(
       userId,
       queryParams.limit,
       queryParams.category,
     );
+    if (questionSet.length === 0) {
+      const question = new Question();
+      question.number = queryParams.category;
+      return [question];
+    } else {
+      return questionSet;
+    }
   }
 
   @Post(':userId')
